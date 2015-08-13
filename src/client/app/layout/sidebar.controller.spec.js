@@ -10,11 +10,10 @@ describe('layout', function() {
         beforeEach(function() {
             module('app.layout', bard.fakeToastr);
             bard.inject('$controller', '$httpBackend', '$location',
-                          '$rootScope', '$state', 'routerHelper');
+                          '$rootScope', '$state');
         });
 
         beforeEach(function() {
-            routerHelper.configureStates(mockData.getMockStates(), '/');
             controller = $controller('SidebarController');
             $rootScope.$apply();
         });

@@ -19,14 +19,14 @@
         });
 
         beforeEach(function() {
-            var html = angular.element('<container></container>');
+            var html = angular.element('<ht-container></ht-container>');
             $rootScope = $rootScope.$new();
             $templateCache.put('app/components/container/container.html', '');
             element = $compile(html)($rootScope);
 
             $rootScope.$digest(element);
 
-            vm = element.controller('container');
+            vm = element.controller('ht-container');
         });
 
         bard.verifyNoOutstandingHttpRequests();

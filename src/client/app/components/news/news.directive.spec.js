@@ -19,14 +19,14 @@
         });
 
         beforeEach(function() {
-            var html = angular.element('<news></news>');
+            var html = angular.element('<ht-news></ht-news>');
             $rootScope = $rootScope.$new();
             $templateCache.put('app/components/news/news.html', '');
             element = $compile(html)($rootScope);
 
             $rootScope.$digest(element);
 
-            vm = element.controller('news');
+            vm = element.controller('ht-news');
         });
 
         bard.verifyNoOutstandingHttpRequests();

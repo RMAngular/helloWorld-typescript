@@ -26,7 +26,7 @@
 
             $rootScope.$digest(element);
 
-            vm = element.controller('people');
+            vm = element.controller('ht-people');
         });
 
         bard.verifyNoOutstandingHttpRequests();

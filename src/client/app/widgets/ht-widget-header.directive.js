@@ -23,7 +23,7 @@ var app;
             HtWidgetHeader.instance = function () {
                 return new HtWidgetHeader();
             };
-            HtWidgetHeader.$inject = [''];
+            HtWidgetHeader.$inject = [];
             return HtWidgetHeader;
         })();
         angular
