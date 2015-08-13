@@ -1,0 +1,40 @@
+<section id="dashboard-view" class="mainbar">
+    <section class="matter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="today-datas">
+                        <li class="blightblue">
+                            <div class="pull-left"><i class="fa fa-plane"></i></div>
+                            <div class="datas-text pull-right">
+                                <span class="bold">May 18 - 19, 2015</span> Castle Resort, Neverland
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                        <li class="borange">
+                            <div class="pull-left"><i class="fa fa-envelope"></i></div>
+                            <div class="datas-text pull-right">
+                                <span class="bold">{{vm.messageCount}}</span> Messages
+                            </div>
+                            <div class="clearfix"></div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <ht-container title="People" color="violet">
+                        <ht-people people="vm.people"></ht-people>
+                    </ht-container>
+                </div>
+                <div class="col-md-6">
+                    <ht-container title="News" color="red">
+                        <ht-news news="vm.news"></ht-news>
+                    </ht-container>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
